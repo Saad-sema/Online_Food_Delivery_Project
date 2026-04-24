@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+    <meta charset="utf-8">
+    <title>FoodDash Project Overview</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>100</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+        h1 { color: #FF6B35; border-bottom: 2px solid #FF6B35; padding-bottom: 5px; }
+        h2 { color: #059669; margin-top: 25px; border-bottom: 1px solid #ddd; }
+        h3 { color: #4F46E5; }
+        .code-block { background-color: #f4f4f4; border: 1px solid #ddd; padding: 10px; font-family: 'Courier New', Courier, monospace; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f8f8f8; color: #333; }
+        .role-customer { color: #FF6B35; font-weight: bold; }
+        .role-restaurant { color: #059669; font-weight: bold; }
+        .role-delivery { color: #4F46E5; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>FoodDash – Online Food Delivery Platform</h1>
+    <p>FoodDash is a comprehensive, full-stack food delivery ecosystem designed to facilitate seamless interactions between customers, restaurants, and delivery personnel. The system utilizes modern mobile and web technologies to provide a real-time, efficient delivery experience.</p>
+
+    <h2>🏗️ System Architecture</h2>
+    <p>The platform follows a centralized backend architecture. A single PHP REST API serves as the communication hub for all four primary interfaces:</p>
+    <ul>
+        <li><strong>Customer App:</strong> Flutter-based mobile application.</li>
+        <li><strong>Restaurant App:</strong> Flutter-based mobile application.</li>
+        <li><strong>Delivery App:</strong> Flutter-based mobile application.</li>
+        <li><strong>Admin Panel:</strong> PHP & Bootstrap 5 web interface.</li>
+    </ul>
+
+    <h2>📱 Core Applications</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Application</th>
+                <th>Technology</th>
+                <th>Primary Function</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="role-customer">Customer App</td>
+                <td>Flutter</td>
+                <td>Browse menus, place orders, and track deliveries in real-time.</td>
+            </tr>
+            <tr>
+                <td class="role-restaurant">Restaurant App</td>
+                <td>Flutter</td>
+                <td>Manage order incoming requests, menu items, and earnings.</td>
+            </tr>
+            <tr>
+                <td class="role-delivery">Delivery App</td>
+                <td>Flutter</td>
+                <td>Accept delivery tasks, navigate to locations, and verify deliveries via OTP.</td>
+            </tr>
+            <tr>
+                <td>Admin Panel</td>
+                <td>PHP / JS</td>
+                <td>Oversee users, restaurants, coupons, and system-wide analytics.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>🔐 Security & Authentication</h2>
+    <ul>
+        <li><strong>JWT (JSON Web Tokens):</strong> Used for secure, stateless communication between the mobile apps and the API.</li>
+        <li><strong>BCrypt Hashing:</strong> All user passwords are encrypted using industry-standard BCrypt.</li>
+        <li><strong>Role-Based Access:</strong> Strict permission levels ensure users can only access data relevant to their role.</li>
+    </ul>
+
+    <h2>📦 Backend Infrastructure</h2>
+    <p>The backend is located in the <code>/backend</code> directory and is built using high-performance Vanilla PHP.</p>
+    <ul>
+        <li><strong>Database:</strong> MySQL (relational database management).</li>
+        <li><strong>Push Notifications:</strong> Integrated with Firebase Cloud Messaging (FCM).</li>
+        <li><strong>Real-time Tracking:</strong> Geolocation updates processed via specialized tracking controllers.</li>
+    </ul>
+
+    <h2>🔄 The Order Life Cycle</h2>
+    <ol>
+        <li><strong>Selection:</strong> The Customer selects items and applies coupons in the Customer App.</li>
+        <li><strong>Confirmation:</strong> The Restaurant receives the order and starts preparation.</li>
+        <li><strong>Assignment:</strong> A Delivery Boy is notified of a new pickup request.</li>
+        <li><strong>Movement:</strong> The Delivery Boy picks up the order and tracks their progress via GPS.</li>
+        <li><strong>Completion:</strong> The Customer provides an OTP to the Delivery Boy to confirm receipt.</li>
+    </ol>
+
+    <p><br><em>Generated by Antigravity AI for FoodDash Project Documentation.</em></p>
+</body>
+</html>

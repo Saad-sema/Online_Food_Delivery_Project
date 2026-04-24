@@ -1,0 +1,33 @@
+name: delivery_boy_app
+description: FoodDash Delivery Boy App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  dio: ^5.4.0
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.9
+  geolocator: ^11.0.0
+  google_maps_flutter: ^2.5.3
+  flutter_countdown_timer: ^4.1.0
+  url_launcher: ^6.2.4
+  intl: ^0.18.1
+  google_fonts: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
